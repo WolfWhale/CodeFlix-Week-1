@@ -1,0 +1,246 @@
+
+/*This set the padding for the black bar*/
+/*Margin is foe top and bottom*/
+/*Protip: add background color to item to show what each item is and where it's location is*/
+*{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*This is the font for the body of the page*/
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*This is the black bar on top*/
+.navbar{
+    width: 100%;
+    height: 57px;
+    background-color: black;
+}
+
+/*This effects the behavior and color of all items in the balck bar*/
+/*Master settings for word items*/
+/*Padding 0 is for top and bottom and 50 is for L/R*/
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    
+}
+
+/*This flexs the logo out in the black bar side-to-side*/
+.logo-container{
+    flex: 2;
+}
+
+/*This is the actual logo font size and color*/
+.logo{
+    
+    font-size: 30px;
+    color: #E50914;
+} 
+
+/*This flexs out every item in the black box with proper space*/
+.menu-container{
+    flex: 6;
+}
+
+/*This provides the space and takes away the bulletpoints on Home,movies,tv and popular*/
+/*for menu items*/
+.menu-list{
+    display: flex;
+    list-style: none;
+
+}
+
+/*This provides spacing to the menu items: Home,movies,tv and popular*/
+/*for menu items*/
+.menu-list-item{
+    margin-right: 30px ;
+    flex: .3;
+    
+}
+
+/*This is the styling for the menu list items*/
+/*for menu items*/
+.menu-list-item.main{
+    font-weight: bold;
+    
+}
+
+/*This flexs the Profile on the R/L side of bar (profile is not coupled to the list items)*/
+.profile-container{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*justify-content: flex-end; - Maybe would use if i moved flag*/ 
+}
+
+/*This provides the spacing for the profile text*/
+/*Margin first 0 is for top and bottom/ 20 is for L/R*/
+.profile-text-container{
+    margin: 0 10px;
+}
+
+/*This is the profile picture settings*/
+/*object fit helps with the image clarity if image has same W and H*/
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*This is the flag image*/
+.flag{
+    width: 25px;
+    height: 18px;
+    padding-top: 5px;
+}
+
+/* This is the background color and font color */
+.container{
+    min-height: calc(100vh - 50px);
+    color: white;
+    background-color: #151515 
+}
+
+/*This is image content in the body of the website */
+/* .content-container{
+     
+} */
+
+/* This is the first bar image */
+.featured-content{
+    height: 50vh;
+}
+
+.movie-list-container{
+    padding: 40px;
+}
+
+
+.movie-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 300px; 
+}
+
+.movie-list-title{
+    align-items: center;
+}
+
+.movie-list-item{
+    position: relative;
+    padding-top: 70px;
+    margin-right: 30px  
+}
+
+.movie-list-item2{
+    position: relative;
+    padding-top: 80px;
+    margin-right: 30px   
+}
+
+.movie-list-item:hover .movie-list-item-image{
+    transform: scale(1.2);
+    opacity: 0.5; 
+}
+
+.movie-list-item2:hover .movie-list-item-image{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+
+/* opacity in this section effects the title & discription  */
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item2:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item2:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button,
+.movie-list-item2:hover .movie-list-item-button{
+    opacity: .7;
+}
+
+.movie-list-item-image{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.movie-list-item-title{
+    /* background-color: #333; */
+    padding:0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 26%;
+    left: 10px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    /* background-color: rgba(51, 51, 51, 0.479); */
+    padding:10px;
+    font-size: 14px;
+    position: absolute;
+    top: 32%;
+    left: 10px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    
+}
+
+
+.movie-list-item-button{
+    padding: 10px;
+    color: white;
+    border-radius: none;
+    border: none; 
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    background-color: #1bad8b
+}
+
+
+
+.footer-container{
+    padding: 0 30px;
+    background-color: #151515;
+}
+
+.footer-text{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.602);
+}
+
+.contact-button-container{
+    padding: 0 30px;
+    padding: 10px 30px;
+    background-color: #151515;
+}
+
+.footer-button,a{
+    
+    border-radius: none;
+    border: none;
+    background-color: #151515;
+}
+

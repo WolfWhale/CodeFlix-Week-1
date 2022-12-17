@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>CODEFLIX</title>
+  </head>
+  <body>
+    <!-- "container" is the parent of an item that that will have other things added into them -->
+    <!-- Best to make a container for any item that will be added -->
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container"><h1 class="logo">CODEFLIX</h1></div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item main">
+              <a href="http://127.0.0.1:5500/index.html">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="https://www.netflix.com/browse/genre/1365">Movies</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="https://www.netflix.com/browse/genre/83">TV</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="https://www.netflix.com/browse/genre/1191605">Popular</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="images/Profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">David</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+        <div class="logo-flag">
+          <img class="flag" src="images/flag.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-container">
+        <!-- Style was added to end of div below, linear gradient with fade to bottom on image-->
+        <!-- could of added fade to actual image-->
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('images/king3.jpg');
+          "
+        >
+          <div class="movie-list-container">
+            <h1 class="movie-list-title">Welcome back David</h1>
+            <div class="move-list-wrapper">
+              <div class="movie-list">
+                <div class="movie-list-item">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie12.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title"
+                    >Avatar: The Way of Water</span
+                  >
+                  <p class="movie-list-item-desc">
+                    Jake Sully and Ney'tiri have formed a family and are doing
+                    everything to stay together. However, they must leave their
+                    home and explore the regions of Pandora.
+                  </p>
+                  <button class="movie-list-item-button" onclick="location.href='https://www.imdb.com/title/tt1630029/'">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie22.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">Wednesday</span>
+                  <p class="movie-list-item-desc">
+                    While attending Nevermore Academy, Wednesday Addams attempts
+                    to master her emerging psychic ability, thwart a killing
+                    spree and solve the mystery that embroiled her parents 25
+                    years ago.
+                  </p>
+                  <button class="movie-list-item-button" onclick="location.href='https://www.netflix.com/title/81231974'">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie3.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">The Sandman</span>
+                  <p class="movie-list-item-desc">
+                    After years of imprisonment, Morpheus — the King of Dreams —
+                    embarks on a journey across worlds to find what was stolen
+                    from him and restore his power.
+                  </p>
+                  <button class="movie-list-item-button"onclick="location.href='https://www.netflix.com/title/81150303'">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie44.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">1899</span>
+                  <p class="movie-list-item-desc">
+                    Immigrants on a steamship travelling from London to New York
+                    get caught up in a mysterious riddle after finding a second
+                    vessel adrift on the open sea.
+                  </p>
+                  <button class="movie-list-item-button" onclick="location.href='https://www.netflix.com/title/80214497'">Watch</button>
+                </div>
+                <div class="movie-list-item2">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie555.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">Squid Game</span>
+                  <p class="movie-list-item-desc">
+                    Hundreds of cash-strapped contestants accept an invitation
+                    to compete in children's games for a tempting prize, but the
+                    stakes are deadly.
+                  </p>
+                  <button class="movie-list-item-button"onclick="location.href='https://www.netflix.com/title/81040344'">Watch</button>
+                </div>
+                <div class="movie-list-item2">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie6.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">Blonde</span>
+                  <p class="movie-list-item-desc">
+                    A look at the rise to fame and the epic demise of actress
+                    Marilyn Monroe, one of the biggest stars in the world.
+                  </p>
+                  <button class="movie-list-item-button"onclick="location.href='https://www.netflix.com/title/80174263'">Watch</button>
+                </div>
+                <div class="movie-list-item2">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie7.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">Bullet Train</span>
+                  <p class="movie-list-item-desc">
+                    Five assassins aboard a fast moving bullet train find out
+                    their missions have something in common
+                  </p>
+                  <button class="movie-list-item-button"onclick="location.href='https://www.imdb.com/title/tt12593682/'">Watch</button>
+                </div>
+                <div class="movie-list-item2">
+                  <img
+                    class="movie-list-item-image"
+                    src="images/movie8.jpg"
+                    alt=""
+                  />
+                  <span class="movie-list-item-title">Extraction</span>
+                  <p class="movie-list-item-desc">
+                    A hardened mercenary's mission becomes a soul-searching race
+                    to survive when he's sent into Bangladesh to rescue a drug
+                    lord's kidnapped son.
+                  </p>
+                  <button class="movie-list-item-button"onclick="location.href='https://www.netflix.com/title/80230399'">Watch</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <p class="footer-text">
+        The Codeflix service is protected by copyright, trademark, trade secret
+        or other intellectual property laws and treaties. Ⓒ
+      </p>
+      </div>
+    </div>
+  </footer>
+  <div class="contact-button-container">
+    <button class="footer-button"><a href="https://help.netflix.com/legal/notices">Legal</a></button>
+  </div>
+</html>
